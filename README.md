@@ -181,3 +181,203 @@ You can click the Preview link to take a look at your changes.
             </div>
 
             <div class="faq-question" onclick="toggleAnswer(2)">
+<img src="https://via.placeholder.com/600x300.png?text=Contaminaci%C3%B3n+por+PM10" alt="Contaminación por PM10">
+<img src="https://via.placeholder.com/600x300.png?text=Contaminaci%C3%B3n+por+PM2.5" alt="Contaminación por PM2.5">
+<img src="pm10.jpg" alt="Contaminación por PM10">
+/* Estilo para las preguntas y respuestas interactivas */
+.faq-question {
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #4CAF50;
+}
+
+.faq-question:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para las imágenes */
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Estilo básico de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+}
+function toggleAnswer(id) {
+    var answer = document.getElementById("answer" + id);
+    if (answer.style.display === "none") {
+        answer.style.display = "block";
+    } else {
+        answer.style.display = "none";
+    }
+}
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contaminación por Partículas PM10 y PM2.5 en la Minería</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para las preguntas y respuestas interactivas */
+        .faq-question {
+            background-color: #f2f2f2;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #4CAF50;
+        }
+
+        .faq-question:hover {
+            background-color: #ddd;
+        }
+
+        /* Estilos para las imágenes */
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Estilo básico de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contaminación por Partículas PM10 y PM2.5 en la Minería</h1>
+        <nav>
+            <ul>
+                <li><a href="#que-son">¿Qué son las Partículas PM10 y PM2.5?</a></li>
+                <li><a href="#beneficios">Beneficios de Reducir PM10 y PM2.5</a></li>
+                <li><a href="#mejora-calidad-aire">Mejora de la Calidad del Aire</a></li>
+                <li><a href="#tecnologia">Tecnología para Reducir Partículas</a></li>
+                <li><a href="#beneficios-largo-plazo">Beneficios a Largo Plazo</a></li>
+                <li><a href="#seguridad-laboral">Efecto en Salud y Seguridad Laboral</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="que-son">
+            <h2>¿Qué son las Partículas PM10 y PM2.5?</h2>
+            <p>Las partículas PM10 y PM

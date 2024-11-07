@@ -10,8 +10,7 @@
 Xerjoffc/Xerjoffc is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
-
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -19,6 +18,86 @@ You can click the Preview link to take a look at your changes.
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contaminación por Partículas PM10 y PM2.5 en la Minería</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para las preguntas y respuestas interactivas */
+        .faq-question {
+            background-color: #f2f2f2;
+            padding: 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #4CAF50;
+        }
+
+        .faq-question:hover {
+            background-color: #ddd;
+        }
+
+        /* Estilos para las imágenes */
+        .image-gallery img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        /* Estilo básico de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fafafa;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,6 +110,7 @@ You can click the Preview link to take a look at your changes.
                 <li><a href="#tecnologia">Tecnología para Reducir Partículas</a></li>
                 <li><a href="#beneficios-largo-plazo">Beneficios a Largo Plazo</a></li>
                 <li><a href="#seguridad-laboral">Efecto en Salud y Seguridad Laboral</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
             </ul>
         </nav>
     </header>
@@ -41,7 +121,10 @@ You can click the Preview link to take a look at your changes.
             <p>Las partículas PM10 y PM2.5 son partículas microscópicas de polvo, humo y otros contaminantes en el aire. Estas partículas son clasificadas según su tamaño: 
                 <strong>PM10</strong> son partículas de menos de 10 micrómetros de diámetro, mientras que las <strong>PM2.5</strong> tienen un diámetro inferior a 2.5 micrómetros. 
                 Ambas son lo suficientemente pequeñas como para ser inhaladas, y pueden penetrar profundamente en los pulmones y el sistema respiratorio.</p>
-            <p>En el contexto de la minería, la liberación de estas partículas durante la extracción, trituración y procesamiento de minerales es una preocupación importante para la salud de los trabajadores y el medio ambiente.</p>
+            <div class="image-gallery">
+                <img src="https://via.placeholder.com/600x300.png?text=Contaminaci%C3%B3n+por+PM10" alt="Contaminación por PM10">
+                <img src="https://via.placeholder.com/600x300.png?text=Contaminaci%C3%B3n+por+PM2.5" alt="Contaminación por PM2.5">
+            </div>
         </section>
 
         <section id="beneficios">
@@ -67,9 +150,6 @@ You can click the Preview link to take a look at your changes.
             <p>Una de las soluciones tecnológicas más innovadoras para reducir las partículas PM10 y PM2.5 en la minería es el uso de ventiladores equipados con cortinas de vapor. 
                 Estos dispositivos, controlados por microcontroladores Arduino, son capaces de reducir la concentración de partículas finas en áreas críticas mediante la emisión de vapor de agua. 
                 El sistema se ajusta automáticamente y registra los datos en tiempo real para monitorear su efectividad.</p>
-            <p><strong>¿El sistema de ventilación mantiene una reducción constante de partículas con el uso continuo?</strong> Sí, el sistema puede mantener una reducción constante siempre y cuando se mantenga en condiciones óptimas y se le dé el mantenimiento adecuado.</p>
-            <p><strong>¿Qué evidencia existe para estimar que el sistema reducirá las partículas en un 50%?</strong> Los sistemas de cortina de vapor han demostrado en estudios previos reducir las partículas suspendidas en el aire en un porcentaje significativo, llegando hasta un 50% de reducción en áreas de alta concentración de polvo.</p>
-            <p><strong>¿Es necesario realizar algún tipo de mantenimiento frecuente?</strong> Sí, el mantenimiento es clave para asegurar la efectividad continua del sistema. Esto incluye la limpieza y revisión periódica de los ventiladores, la calibración de los arduinos y la comprobación de los niveles de vapor.</p>
         </section>
 
         <section id="beneficios-largo-plazo">
@@ -89,10 +169,15 @@ You can click the Preview link to take a look at your changes.
                 La reducción de las partículas contaminantes mejora las condiciones de trabajo, lo que puede llevar a una menor incidencia de enfermedades respiratorias y otros problemas relacionados con la exposición a polvo. 
                 Esto no solo beneficia a los trabajadores, sino que también ayuda a las empresas a cumplir con las normativas de seguridad laboral y mejorar su reputación.</p>
         </section>
-    </main>
 
-    <footer>
-        <p>&copy; 2024 Minería Sostenible. Todos los derechos reservados.</p>
-    </footer>
-</body>
-</html>
+        <!-- Sección de Preguntas Frecuentes -->
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-question" onclick="toggleAnswer(1)">
+                ¿Cuáles son los beneficios directos de reducir las partículas PM10 y PM2.5 en la minería?
+            </div>
+            <div id="answer1" class="faq-answer">
+                La reducción de partículas finas mejora la salud respiratoria de los mineros al disminuir la exposición a contaminantes que pueden causar enfermedades pulmonares y otros problemas de salud. Además, el cumplimiento de las normas de calidad del aire puede evitar sanciones y mejorar la reputación de la empresa en términos de sostenibilidad.
+            </div>
+
+            <div class="faq-question" onclick="toggleAnswer(2)">
